@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of a Backend Engineer specialized in scalable systems.">
+    <!-- Google Fonts: Inter as a proxy for the modern sans-serif look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-background"></div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="mailto:anurag7017255@gmail.com" class="nav-link email-link">anurag7017255@gmail.com</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://drive.google.com/file/d/1WtiKth9kvCR10MZ7_QjXyKR_7be8PYaC/view?usp=sharing" target="_blank"
+                class="nav-link resume-btn">Download Resume</a>
+            <a href="https://www.linkedin.com/in/anurag-goswami/" target="_blank" class="nav-link">LinkedIn</a>
+            <a href="#" class="nav-link">GitHub</a>
+            <a href="https://leetcode.com/u/anurag7017255/" target="_blank" class="nav-link">LeetCode</a>
+        </div>
+
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="profile-container">
+                <div class="profile-img-wrapper">
+                    <img src="profile.png" alt="Anurag Goswami" class="profile-img">
+                </div>
+                <div class="greeting-badge">👋 Hi, I'm Anurag</div>
+            </div>
+
+            <h1 class="hero-title">
+                Building scalable<br>
+                data systems.
+            </h1>
+
+            <p class="hero-subtitle">
+                Software Engineer at Cars24. Expert in Python, Django, and Distributed Systems.<br>
+                Scaling ETL pipelines and financial workflows to millions of reliable transactions.
+            </p>
+
+            <div class="cta-container">
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            </div>
+        </section>
+
+
+        <section class="roadmap-section">
+            <h2 class="section-heading">Experience Roadmap</h2>
+            <div class="timeline">
+                <!-- Item 1: Cars24 -->
+                <div class="timeline-item" data-tech="fastapi temporal redis snowflake python etl">
+                    <div class="timeline-left">
+                        <h3 class="company-name">Cars24</h3>
+                        <p class="role-title">Software Engineer</p>
+                        <p class="duration">March 2025 – Present</p>
+                        <p class="location">Gurugram, India</p>
+                    </div>
+                    <div class="timeline-divider">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h4 class="work-title">ETL Middleware & Financial Engine</h4>
+                        <ul class="work-list">
+                            <li>Developed in-house ETL middleware for Emails, APIs, SAP, and PubSub systems.</li>
+                            <li>Built scalable accounting engine processing 80% of company volume (documented in Eng
+                                Blog).</li>
+                            <li>Implemented SAP S/4HANA integration for real-time reporting.</li>
+                            <li>Managed fault-tolerant workflows using <strong>Temporal</strong> and
+                                <strong>Airflow</strong> (Impact recognized by Founder).
+                            </li>
+                        </ul>
+                        <div class="prod-link-wrapper">
+                            <a href="https://autonauts.cars24.com/blog/driving-digital-transformation" target="_blank"
+                                class="prod-link">
+                                🔗 Eng Blog: Driving Digital Transformation
+                            </a>
+                            <br>
+                            <a href="https://www.linkedin.com/posts/ruchitagarwal_automation-in-finance-at-cars24-activity-7368107258196525056-jG6a?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHNKMIBnyhKPZDiRdJ6qjeu38vnjC4wRqE"
+                                target="_blank" class="prod-link">
+                                🔗 Founder's Post: Automation Impact & Success
+                            </a>
+                        </div>
+                        <div class="tech-stack small-stack">
+                            <span>FastAPI</span>
+                            <span>Temporal</span>
+                            <span>Redis</span>
+                            <span>Snowflake</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Careers360 -->
+                <div class="timeline-item" data-tech="django kafka elasticsearch celery">
+                    <div class="timeline-left">
+                        <h3 class="company-name">Careers360</h3>
+                        <p class="role-title">Software Engineer</p>
+                        <p class="duration">Jan 2023 – Feb 2025</p>
+                        <p class="location">Bengaluru, India</p>
+                    </div>
+                    <div class="timeline-divider">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h4 class="work-title">Search Sync & Microservices</h4>
+                        <ul class="work-list">
+                            <li>Engineered CDC pipelines (Maxwell/Kafka) to sync AWS RDS with Elasticsearch to power
+                                search.</li>
+                            <li>Designed tax-compliant pricing system and automated notifications.</li>
+                            <li>Migrated email system to microservice (50k+ daily emails) via separate mailer service.
+                            </li>
+                            <li>Optimized legacy APIs with Redis, reducing latency by 90%.</li>
+                        </ul>
+                        <div class="prod-link-wrapper">
+                            <a href="https://www.careers360.com/download/ebooks-and-sample-papers" target="_blank"
+                                class="prod-link">
+                                🔗 View Prod: E-Book/Paper Download (Powered by ES & Mailer)
+                            </a>
+                        </div>
+                        <div class="tech-stack small-stack">
+                            <span>Django</span>
+                            <span>Kafka</span>
+                            <span>Elasticsearch</span>
+                            <span>Celery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-heading">Technical Expertise</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Backend Architecture</h3>
+                    <p class="card-desc">Building robust microservices with FastAPI & Django. Expert in ORM optimization
+                        and Celery task queues.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🗄️</div>
+                    <h3 class="card-title">Data Engineering</h3>
+                    <p class="card-desc">Designing ETL pipelines (Airflow, Temporal) to sync ElasticSearch & Snowflake
+                        from diverse sources.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">High Reliability</h3>
+                    <p class="card-desc">Processing 80% of company accounting volume with 99.9% uptime using
+                        event-driven architectures.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Performance</h3>
+                    <p class="card-desc">Reducing API latency by 90% via Redis caching and optimizing legacy SQL
+                        queries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles-section">
+            <h2 class="section-heading">Published Articles</h2>
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <a href="https://medium.com/@anurag7017255/sync-vs-async-vs-threading-vs-multithreading-a53057660ae3"
+                    target="_blank" class="article-card">
+                    <div class="article-content">
+                        <span class="article-date">Medium</span>
+                        <h3 class="article-title">Sync vs Async vs Threading vs Multithreading</h3>
+                        <p class="article-desc">A deep dive into concurrency models and when to use which in Python
+                            applications.</p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </a>
+                <!-- Article 2 -->
+                <a href="https://medium.com/@anurag7017255/how-python-crunches-numbers-bigger-than-the-universe-9d5e33d664cf"
+                    target="_blank" class="article-card">
+                    <div class="article-content">
+                        <span class="article-date">Medium</span>
+                        <h3 class="article-title">How Python Crunches Numbers Bigger Than the Universe</h3>
+                        <p class="article-desc">Exploring Python's arbitrary-precision integers and memory management.
+                        </p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </a>
+                <!-- Article 3 -->
+                <a href="https://medium.com/@anurag7017255/unraveling-the-magic-behind-sqls-order-by-3f790711875b"
+                    target="_blank" class="article-card">
+                    <div class="article-content">
+                        <span class="article-date">Medium</span>
+                        <h3 class="article-title">Unraveling the Magic Behind SQL's ORDER BY</h3>
+                        <p class="article-desc">Understanding database sorting algorithms and performance implications.
+                        </p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-heading">Get in Touch</h2>
+            <p class="contact-text">Always open to discussing scalable architectures and distributed systems.</p>
+            <a href="mailto:anurag7017255@gmail.com" class="btn btn-primary">anurag7017255@gmail.com</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <span class="status-text">System Status: All Systems Operational | Uptime 99.99%</span>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Anurag Goswami. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html><!-- Terminal Overlay -->
+<div id="terminal-overlay" class="hidden">
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="close-btn"></span>
+                <span class="min-btn"></span>
+                <span class="max-btn"></span>
+            </div>
+            <div class="terminal-title">user@portfolio:~</div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output">
+                Welcome to Anurag's Interactive Terminal v1.0.0<br>
+                Type 'help' to see available commands.
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">user@anurag:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off" autofocus>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Terminal Toggle Button -->
+<button id="terminal-toggle" title="Open Terminal (~)">&gt;_</button>
