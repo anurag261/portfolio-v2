@@ -161,4 +161,23 @@ document.addEventListener('DOMContentLoaded', () => {
             gridBg.style.backgroundPosition = `${moveX}px ${moveY}px`;
         });
     }
+
+    // 6. Mobile Navigation Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 });
