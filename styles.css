@@ -83,6 +83,35 @@ a:hover {
     /* Ensures button aligns with text links */
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Animation active state */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -349,18 +378,57 @@ a:hover {
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-right {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #0f0f0f;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        border-left: 1px solid var(--border-color);
+        /* Mobile menu styles */
+        padding: 2rem;
+        gap: 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-right.active {
+        right: 0;
+        display: flex;
+        /* Ensure it's flex when active */
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 
     .logo-strip {
         gap: 2rem;
     }
 
-    .nav-right {
-        display: none;
-        /* Simplify nav on mobile */
+    /* Services Grid Mobile */
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-item {
@@ -373,6 +441,22 @@ a:hover {
         max-width: 100%;
     }
 }
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        padding: 2rem 3%;
+    }
+}
+
 
 /* Roadmap / Timeline */
 .roadmap-section {
